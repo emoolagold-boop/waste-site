@@ -4,136 +4,160 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Waste to Energy (UK) Ltd — energy &amp; industrial equipment supply</title>
-<meta name="description" content="Waste to Energy (UK) Ltd sources energy, renewable and industrial equipment for buyers across international markets. UK-registered, established 2014.">
+<meta name="description" content="Waste to Energy (UK) Ltd sources energy, renewable and industrial equipment and advises on energy and commodities opportunities. UK-registered, established 2014.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2712%27 fill=%27%2312304A%27/%3E%3Crect x=%2710%27 y=%2742%27 width=%2744%27 height=%276%27 fill=%27%231F7A8C%27/%3E%3Ctext x=%2732%27 y=%2740%27 font-family=%27Arial,sans-serif%27 font-size=%2734%27 font-weight=%27bold%27 text-anchor=%27middle%27 fill=%27%23FFFFFF%27%3EW%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#12304A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
 <style>
   :root {
-    --ink: #12181c;
-    --ink-2: #1c2833;
-    --slate: #47576a;
-    --steel: #c8925a;      /* warm amber accent — energy */
-    --steel-deep: #a5702f;
-    --mist: #eef1f3;
-    --paper: #f7f8f9;
-    --line: #d9dee3;
+    --navy: #12304A;
+    --navy-2: #0D2438;
+    --teal: #1F7A8C;
+    --teal-soft: #9FC3CC;
+    --teal-pale: #D5E6EA;
+    --sand: #F1EDE4;
+    --line: #C9C2B3;
+    --ink: #2B3036;
+    --muted: #6B7077;
     --white: #ffffff;
   }
   * { margin:0; padding:0; box-sizing:border-box; }
-  html { scroll-behavior:smooth; }
+  html { scroll-behavior:smooth; scroll-padding-top:76px; }
   body {
-    font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
-    color:var(--ink); background:var(--paper); line-height:1.62;
+    font-family:"Lato","Carlito","Calibri","Segoe UI",Arial,sans-serif;
+    color:var(--ink); background:var(--white); line-height:1.6;
     -webkit-font-smoothing:antialiased;
   }
-  .wrap { max-width:1120px; margin:0 auto; padding:0 34px; }
-  .u {
-    font-family:"Helvetica Neue",Arial,sans-serif;
-    letter-spacing:0.15em; text-transform:uppercase; font-size:0.71rem; font-weight:600;
-  }
+  .wrap { max-width:1120px; margin:0 auto; padding:0 32px; }
+  @media (max-width:640px){ .wrap{ padding:0 16px; } }
+  .u { letter-spacing:0.14em; text-transform:uppercase; font-size:0.72rem; font-weight:700; }
 
   /* Header */
-  header {
-    border-bottom:1px solid var(--line);
-    background:rgba(247,248,249,0.92); backdrop-filter:blur(8px);
-    position:sticky; top:0; z-index:10;
-  }
-  .bar { display:flex; align-items:center; justify-content:space-between; height:76px; }
-  .brand { display:flex; align-items:baseline; gap:13px; }
-  .brand .mark { font-family:"Helvetica Neue",Arial,sans-serif; font-weight:700; font-size:1.1rem; letter-spacing:-0.01em; color:var(--ink); }
-  .brand .mark b { color:var(--steel-deep); font-weight:700; }
-  .brand .sub { color:var(--slate); }
-  nav { display:flex; align-items:center; }
+  header { background:var(--white); border-bottom:1px solid var(--line); position:sticky; top:0; z-index:10; }
+  .bar { display:flex; align-items:center; justify-content:space-between; height:70px; }
+  .brand { display:flex; align-items:center; gap:12px; text-decoration:none; }
+  .brand .tick { width:6px; height:26px; background:var(--teal); }
+  .brand .mark { font-weight:900; font-size:1.08rem; color:var(--navy); letter-spacing:-0.005em; }
+  .brand .mark b { color:var(--teal); font-weight:900; }
+  .brand .sub { color:var(--muted); }
   .nav-links { display:flex; }
-  nav a { color:var(--slate); text-decoration:none; margin-left:30px; transition:color .2s; }
-  nav a:hover { color:var(--steel-deep); }
-  @media (max-width:640px){ .nav-links{ display:none; } }
+  .nav-links a { color:var(--navy); text-decoration:none; margin-left:28px; padding:6px 0; border-bottom:2px solid transparent; transition:border-color .2s,color .2s; }
+  .nav-links a:hover { color:var(--teal); border-bottom-color:var(--teal); }
+  @media (max-width:760px){ .nav-links{ display:none; } }
 
-  /* Hero */
-  .hero { position:relative; overflow:hidden; }
-  .hero-inner { padding:104px 34px 88px; position:relative; z-index:2; }
-  .hero .eyebrow { color:var(--steel-deep); margin-bottom:26px; }
-  .hero h1 {
-    font-size:clamp(2.5rem,5.6vw,4.25rem); line-height:1.04; font-weight:600;
-    letter-spacing:-0.022em; max-width:16ch; margin-bottom:30px;
-  }
-  .hero p.lead { font-size:1.28rem; color:var(--slate); max-width:54ch; margin-bottom:42px; }
-  .cta-row { display:flex; gap:16px; flex-wrap:wrap; }
-  .btn {
-    font-family:"Helvetica Neue",Arial,sans-serif; font-weight:600; font-size:0.95rem;
-    padding:16px 32px; border-radius:2px; text-decoration:none; display:inline-block;
-    transition:transform .15s,background .2s,box-shadow .2s,border-color .2s;
-  }
-  .btn-primary { background:var(--ink-2); color:#fff; }
-  .btn-primary:hover { background:var(--steel-deep); transform:translateY(-1px); box-shadow:0 10px 26px rgba(165,112,47,0.26); }
-  .btn-ghost { color:var(--ink); border:1px solid var(--line); }
-  .btn-ghost:hover { border-color:var(--steel); background:var(--mist); }
-  /* subtle energy motif: layered diagonal lines top-right */
+  /* Hero: matches PDF cover */
+  .hero { background:var(--navy); color:var(--white); position:relative; overflow:hidden; }
+  .hero-inner { padding:96px 32px 84px; position:relative; z-index:2; }
+  @media (max-width:640px){ .hero-inner{ padding:64px 16px 56px; } }
+  .hero .eyebrow { color:var(--teal-soft); margin-bottom:28px; }
+  .hero h1 { font-size:clamp(2.3rem,5.4vw,3.9rem); line-height:1.06; font-weight:900; letter-spacing:-0.015em; max-width:17ch; }
+  .hero .rule { width:110px; height:6px; background:var(--teal); margin:30px 0 28px; }
+  .hero p.lead { font-size:1.2rem; color:var(--teal-pale); max-width:56ch; margin-bottom:40px; }
   .hero::after {
-    content:""; position:absolute; top:-40%; right:-10%; width:60%; height:180%;
-    background:
-      repeating-linear-gradient(135deg, rgba(200,146,90,0.07) 0 2px, transparent 2px 26px);
-    transform:rotate(0deg); z-index:1; pointer-events:none;
+    content:""; position:absolute; top:0; right:0; width:42%; height:100%;
+    background:linear-gradient(90deg, rgba(31,122,140,0) 0%, rgba(31,122,140,0.16) 100%);
+    pointer-events:none;
   }
+  .hero-band { height:5px; background:var(--teal); }
+  .cta-row { display:flex; gap:14px; flex-wrap:wrap; }
+  .btn { font-weight:700; font-size:0.95rem; padding:15px 30px; border-radius:2px; text-decoration:none; display:inline-block;
+         transition:transform .15s,background .2s,border-color .2s,color .2s; }
+  .btn-primary { background:var(--teal); color:var(--white); }
+  .btn-primary:hover { background:#17687A; transform:translateY(-1px); }
+  .btn-ghost { color:var(--white); border:1px solid rgba(159,195,204,0.6); }
+  .btn-ghost:hover { border-color:var(--white); background:rgba(255,255,255,0.06); }
+  .btn-navy { background:var(--navy); color:var(--white); }
+  .btn-navy:hover { background:var(--teal); }
 
-  /* Stat strip */
-  .strip { border-top:1px solid var(--line); border-bottom:1px solid var(--line); background:var(--white); }
-  .strip .wrap { display:flex; flex-wrap:wrap; gap:48px; padding:32px 34px; }
-  .strip .item .n { font-family:"Helvetica Neue",Arial,sans-serif; font-weight:700; font-size:1.55rem; color:var(--ink); letter-spacing:-0.01em; }
-  .strip .item .l { color:var(--slate); font-size:0.9rem; }
+  /* Fact strip: like the PDF "at a glance" rows */
+  .strip { background:var(--sand); border-bottom:1px solid var(--line); }
+  .strip .wrap { display:grid; grid-template-columns:repeat(3,1fr); }
+  @media (max-width:720px){ .strip .wrap{ grid-template-columns:1fr; } }
+  .strip .item { padding:26px 24px 24px 0; border-left:3px solid var(--teal); padding-left:18px; margin:22px 0; }
+  .strip .item .n { display:block; font-weight:900; font-size:1.35rem; color:var(--navy); }
+  .strip .item .l { color:var(--muted); font-size:0.92rem; }
 
-  section { padding:90px 0; }
-  .sec-label { color:var(--steel-deep); margin-bottom:18px; }
-  h2 { font-size:clamp(1.8rem,3.6vw,2.6rem); font-weight:600; letter-spacing:-0.018em; max-width:22ch; margin-bottom:22px; line-height:1.1; }
-  .sec-intro { color:var(--slate); font-size:1.14rem; max-width:60ch; }
+  section { padding:88px 0; }
+  @media (max-width:640px){ section{ padding:60px 0; } }
+  .sec-label { color:var(--teal); margin-bottom:14px; }
+  h2 { font-size:clamp(1.7rem,3.4vw,2.4rem); font-weight:900; color:var(--navy); letter-spacing:-0.012em; max-width:24ch; margin-bottom:18px; line-height:1.12; }
+  .sec-intro { color:var(--ink); font-size:1.1rem; max-width:62ch; }
 
-  /* Capability grid */
-  .cap-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); margin-top:54px; border:1px solid var(--line); }
-  @media (max-width:820px){ .cap-grid{ grid-template-columns:1fr; } }
-  .cap { background:var(--paper); padding:40px 34px; transition:background .25s; }
-  .cap:hover { background:var(--mist); }
-  .cap .idx { color:var(--steel); font-family:"Helvetica Neue",Arial,sans-serif; font-weight:700; font-size:0.8rem; letter-spacing:0.1em; }
-  .cap h3 { font-size:1.3rem; font-weight:600; margin:15px 0 10px; letter-spacing:-0.01em; }
-  .cap p { color:var(--slate); font-size:0.99rem; }
+  /* Capabilities */
+  .cap-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:48px; }
+  @media (max-width:880px){ .cap-grid{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:600px){ .cap-grid{ grid-template-columns:1fr; } }
+  .cap { background:var(--sand); border-top:3px solid var(--teal); padding:30px 28px 30px; }
+  .cap .idx { color:var(--teal); font-weight:900; font-size:0.82rem; letter-spacing:0.1em; }
+  .cap h3 { font-size:1.22rem; font-weight:900; color:var(--navy); margin:10px 0 8px; }
+  .cap p { color:var(--ink); font-size:0.98rem; }
 
-  /* Markets / dark band */
-  .markets { background:var(--ink); color:#cdd6dd; }
-  .markets h2 { color:#fff; }
-  .markets .sec-label { color:var(--steel); }
-  .markets .sec-intro { color:#9fb0bd; }
-  .m-list { margin-top:46px; display:grid; grid-template-columns:repeat(2,1fr); gap:38px 56px; }
-  @media (max-width:720px){ .m-list{ grid-template-columns:1fr; } }
-  .m-item { border-top:1px solid #2a3947; padding-top:20px; }
-  .m-item h4 { font-family:"Helvetica Neue",Arial,sans-serif; font-size:1.04rem; color:#fff; font-weight:600; margin-bottom:8px; }
-  .m-item p { color:#94a6b3; font-size:0.98rem; }
+  .cap.wide { grid-column:1/-1; background:var(--navy); border-top-color:var(--teal); color:var(--teal-pale); padding:40px 36px; }
+  .cap.wide .idx { color:var(--teal-soft); }
+  .cap.wide h3 { color:var(--white); font-size:1.45rem; }
+  .cap.wide p { color:var(--teal-pale); }
+  .cap.wide .wide-in { display:grid; grid-template-columns:1.1fr 1fr; gap:30px 48px; align-items:start; }
+  @media (max-width:820px){ .cap.wide .wide-in{ grid-template-columns:1fr; } .cap.wide{ padding:32px 22px; } }
+  .cap ul { list-style:none; }
+  .cap.wide li { color:var(--white); font-size:0.98rem; padding:11px 0 11px 20px; border-top:1px solid rgba(159,195,204,0.28); position:relative; }
+  .cap.wide li:first-child { border-top:0; padding-top:2px; }
+  .cap.wide li::before { content:""; position:absolute; left:0; top:1.25em; width:8px; height:8px; background:var(--teal); }
+  .cap.wide li:first-child::before { top:.65em; }
+
+  /* Markets: sand band with table-style rows */
+  .markets { background:var(--sand); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .m-table { margin-top:44px; background:var(--white); border:1px solid var(--line); }
+  .m-row { display:grid; grid-template-columns:280px 1fr; border-top:1px solid var(--line); }
+  .m-row:first-child { border-top:0; }
+  .m-row.head { background:var(--navy); color:var(--white); }
+  .m-row > div { padding:16px 20px; }
+  .m-row.head > div { padding:12px 20px; }
+  .m-row h4 { font-size:1.02rem; font-weight:700; color:var(--navy); }
+  .m-row p { color:var(--ink); font-size:0.98rem; }
+  .m-row:nth-child(odd):not(.head) { background:#FAF8F3; }
+  @media (max-width:640px){ .m-row{ grid-template-columns:1fr; } .m-row > div + div{ padding-top:0; } .m-row.head > div + div{ display:none; } }
 
   /* Approach */
-  .approach .a-list { margin-top:50px; display:grid; grid-template-columns:repeat(2,1fr); gap:40px 56px; }
-  @media (max-width:720px){ .approach .a-list{ grid-template-columns:1fr; } }
-  .a-item { border-top:2px solid var(--steel); padding-top:18px; }
-  .a-item h4 { font-family:"Helvetica Neue",Arial,sans-serif; font-size:1.06rem; font-weight:600; margin-bottom:8px; color:var(--ink); }
-  .a-item p { color:var(--slate); font-size:0.99rem; }
+  .a-list { margin-top:46px; display:grid; grid-template-columns:repeat(2,1fr); gap:22px; }
+  @media (max-width:720px){ .a-list{ grid-template-columns:1fr; } }
+  .a-item { border-left:3px solid var(--teal); background:var(--sand); padding:22px 24px; }
+  .a-item h4 { font-size:1.06rem; font-weight:900; color:var(--navy); margin-bottom:6px; }
+  .a-item p { color:var(--ink); font-size:0.98rem; }
 
-  /* Contact */
-  .contact { background:var(--mist); }
-  .contact-card { background:var(--white); border:1px solid var(--line); border-radius:3px; padding:58px 50px; margin-top:40px; display:grid; grid-template-columns:1.2fr 1fr; gap:50px; }
-  @media (max-width:720px){ .contact-card{ grid-template-columns:1fr; padding:38px 30px; } }
-  .contact-card h2 { margin-bottom:14px; }
-  .contact-card .lead { color:var(--slate); font-size:1.08rem; }
-  .cfield { margin-bottom:6px; }
-  .cfield .k { color:var(--steel-deep); }
-  .cfield .v { font-size:1.1rem; color:var(--ink); }
-  .cfield .v a { color:var(--ink); text-decoration:none; border-bottom:1px solid var(--steel); padding-bottom:1px; }
-  .cfield .v a:hover { color:var(--steel-deep); }
-  .cbox { display:flex; flex-direction:column; justify-content:center; gap:20px; }
+  /* About */
+  .about { border-top:1px solid var(--line); }
+  .about-grid { display:grid; grid-template-columns:1fr 2fr; gap:48px; }
+  @media (max-width:820px){ .about-grid{ grid-template-columns:1fr; gap:10px; } }
+  .about p { color:var(--ink); font-size:1.06rem; max-width:66ch; margin-bottom:16px; }
 
-  footer { background:var(--ink); color:#8296a3; padding:46px 0; }
-  footer .wrap { display:flex; flex-wrap:wrap; justify-content:space-between; gap:22px; align-items:flex-start; }
-  footer .fbrand { color:#fff; font-family:"Helvetica Neue",Arial,sans-serif; font-weight:700; }
-  footer .fbrand b { color:var(--steel); }
-  footer p { font-size:0.85rem; max-width:58ch; line-height:1.7; }
-  .legal { font-size:0.78rem; color:#61727e; margin-top:6px; }
+  /* Contact: navy panel like PDF cover */
+  .contact { background:var(--navy); color:var(--teal-pale); }
+  .contact .sec-label { color:var(--teal-soft); }
+  .contact h2 { color:var(--white); }
+  .contact-grid { display:grid; grid-template-columns:1.2fr 1fr; gap:56px; align-items:start; }
+  @media (max-width:820px){ .contact-grid{ grid-template-columns:1fr; gap:30px; } }
+  .contact .lead { font-size:1.08rem; color:var(--teal-pale); max-width:52ch; }
+  .rule-sm { width:80px; height:5px; background:var(--teal); margin:24px 0; }
+  .cbox { background:var(--white); color:var(--ink); border-left:4px solid var(--teal); padding:28px 28px 30px; }
+  .cfield { padding:10px 0; border-bottom:1px solid #E4DED2; }
+  .cfield:first-child { padding-top:0; }
+  .cfield .k { color:var(--teal); font-size:0.68rem; }
+  .cfield .v { font-size:1.05rem; color:var(--navy); font-weight:700; overflow-wrap:anywhere; }
+  .cfield .v a { color:var(--navy); text-decoration:none; border-bottom:2px solid var(--teal); }
+  .cfield .v a:hover { color:var(--teal); }
+  .cbox .btn { margin-top:20px; }
 
-  ::selection { background:var(--steel); color:#fff; }
-  a:focus-visible,.btn:focus-visible { outline:2px solid var(--steel); outline-offset:3px; }
+  footer { background:var(--navy-2); color:var(--teal-soft); padding:40px 0; }
+  footer .wrap { display:flex; flex-wrap:wrap; justify-content:space-between; gap:22px; }
+  footer .fbrand { color:var(--white); font-weight:900; margin-bottom:6px; }
+  footer .fbrand b { color:var(--teal-soft); }
+  footer p { font-size:0.84rem; max-width:58ch; line-height:1.7; }
+  .legal { font-size:0.78rem; color:#7FA4AE; }
+
+  ::selection { background:var(--teal); color:#fff; }
+  a:focus-visible,.btn:focus-visible { outline:2px solid var(--teal-soft); outline-offset:3px; }
   @media (prefers-reduced-motion:reduce){ *{ scroll-behavior:auto; transition:none!important; } }
 </style>
 </head>
@@ -141,42 +165,45 @@
 
 <header>
   <div class="wrap bar">
-    <div class="brand">
+    <a class="brand" href="#top" aria-label="Waste to Energy (UK) Ltd, home">
+      <span class="tick" aria-hidden="true"></span>
       <span class="mark">Waste to Energy <b>(UK)</b></span>
       <span class="u sub">Est. 2014</span>
-    </div>
-    <nav>
-      <div class="nav-links u">
-        <a href="#what">Capabilities</a>
-        <a href="#markets">Markets</a>
-        <a href="#approach">Approach</a>
-        <a href="#contact">Contact</a>
-      </div>
+    </a>
+    <nav class="nav-links u" aria-label="Main">
+      <a href="#capabilities">Capabilities</a>
+      <a href="#markets">Markets</a>
+      <a href="#approach">Approach</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
     </nav>
   </div>
 </header>
 
+<main id="top">
 <div class="hero">
   <div class="wrap hero-inner">
-    <div class="u eyebrow">Energy &amp; industrial equipment supply</div>
+    <div class="u eyebrow">Energy &amp; industrial equipment supply &nbsp;&middot;&nbsp; Energy &amp; commodities advisory</div>
     <h1>Sourcing the equipment that builds and powers.</h1>
+    <div class="rule" aria-hidden="true"></div>
     <p class="lead">Waste to Energy (UK) Ltd connects international buyers with capable manufacturers of energy, renewable and industrial equipment — sourced directly, verified properly, delivered where it's needed.</p>
     <div class="cta-row">
       <a href="#contact" class="btn btn-primary">Get in touch</a>
-      <a href="#what" class="btn btn-ghost">What we source</a>
+      <a href="#capabilities" class="btn btn-ghost">What we do</a>
     </div>
   </div>
 </div>
+<div class="hero-band" aria-hidden="true"></div>
 
 <div class="strip">
   <div class="wrap">
-    <div class="item"><span class="n">Est. 2014</span><span class="l">A UK-registered company</span></div>
+    <div class="item"><span class="n">Est. 2014</span><span class="l">Registered in England &amp; Wales</span></div>
     <div class="item"><span class="n">VAT registered</span><span class="l">A recognised trading entity</span></div>
     <div class="item"><span class="n">Multi-market</span><span class="l">Supplying across international markets</span></div>
   </div>
 </div>
 
-<section id="what">
+<section id="capabilities">
   <div class="wrap">
     <div class="u sec-label">Capabilities</div>
     <h2>Direct sourcing across energy and industry.</h2>
@@ -213,6 +240,21 @@
         <h3>Logistics &amp; delivery</h3>
         <p>Freight, export documentation and delivery coordinated to the destination market's requirements.</p>
       </div>
+      <div class="cap wide">
+        <div class="wide-in">
+          <div>
+            <div class="idx">07</div>
+            <h3>Energy &amp; Commodities Advisory</h3>
+            <p>We support clients in the energy and petroleum sectors with opportunity origination, market assessment and project structuring. Working alongside specialist operators, lenders, insurers and legal advisers, we help bring together the parties needed to take commercial opportunities from concept to execution, with compliance built in from the start.</p>
+          </div>
+          <ul>
+            <li>Market and opportunity assessment across energy supply chains</li>
+            <li>Investor and partner introductions for energy and logistics projects</li>
+            <li>Coordination of specialist advisers: technical, legal, insurance and finance</li>
+            <li>Sanctions-aware and regulation-first approach to every engagement</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -223,23 +265,12 @@
     <h2>Built around where the demand is.</h2>
     <p class="sec-intro">We supply buyers across several regions, with particular focus on markets where infrastructure investment and energy demand are growing fastest. We source to each destination's standards — because equipment is only useful if it meets the rules of the market it's entering.</p>
 
-    <div class="m-list">
-      <div class="m-item">
-        <h4>Africa &amp; the Middle East</h4>
-        <p>Regions with strong, growing demand for energy, power and infrastructure equipment.</p>
-      </div>
-      <div class="m-item">
-        <h4>United Kingdom &amp; Europe</h4>
-        <p>Supply that meets UK and EU regulatory and documentation requirements.</p>
-      </div>
-      <div class="m-item">
-        <h4>Trade &amp; project buyers</h4>
-        <p>From single consignments to ongoing supply for larger programmes.</p>
-      </div>
-      <div class="m-item">
-        <h4>Long-term relationships</h4>
-        <p>We'd rather build repeat, reliable supply than chase one-off transactions.</p>
-      </div>
+    <div class="m-table" role="table" aria-label="Markets we serve">
+      <div class="m-row head u" role="row"><div role="columnheader">Market</div><div role="columnheader">Focus</div></div>
+      <div class="m-row" role="row"><div role="cell"><h4>Africa &amp; the Middle East</h4></div><div role="cell"><p>Regions with strong, growing demand for energy, power and infrastructure equipment.</p></div></div>
+      <div class="m-row" role="row"><div role="cell"><h4>United Kingdom &amp; Europe</h4></div><div role="cell"><p>Supply that meets UK and EU regulatory and documentation requirements.</p></div></div>
+      <div class="m-row" role="row"><div role="cell"><h4>Trade &amp; project buyers</h4></div><div role="cell"><p>From single consignments to ongoing supply for larger programmes.</p></div></div>
+      <div class="m-row" role="row"><div role="cell"><h4>Long-term relationships</h4></div><div role="cell"><p>We'd rather build repeat, reliable supply than chase one-off transactions.</p></div></div>
     </div>
   </div>
 </section>
@@ -271,36 +302,37 @@
   </div>
 </section>
 
-<section id="contact" class="contact">
-  <div class="wrap">
-    <div class="contact-card">
-      <div>
-        <div class="u sec-label">Contact</div>
-        <h2>Tell us what you're sourcing.</h2>
-        <p class="lead">Whether you're a buyer with a requirement or a manufacturer seeking a route to market, we'd be glad to talk. Tell us the equipment, the market and the scale, and we'll come back to you.</p>
-      </div>
-      <div class="cbox">
-        <div class="cfield">
-          <div class="u k">Email</div>
-          <div class="v"><a href="mailto:info@wastetoenergyuk.com">info@wastetoenergyuk.com</a></div>
-        </div>
-        <div class="cfield">
-          <div class="u k">Telephone</div>
-          <div class="v">+44 7588 500 110</div>
-        </div>
-        <div class="cfield">
-          <div class="u k">Web</div>
-          <div class="v">wastetoenergyuk.com</div>
-        </div>
-        <div class="cfield">
-          <div class="u k">Company</div>
-          <div class="v">Waste to Energy (UK) Ltd &middot; No. 09021956</div>
-        </div>
-        <a href="mailto:info@wastetoenergyuk.com" class="btn btn-primary" style="margin-top:6px;">Start a conversation</a>
-      </div>
+<section id="about" class="about">
+  <div class="wrap about-grid">
+    <div>
+      <div class="u sec-label">About us</div>
+      <h2>Straightforward dealing, across borders.</h2>
+    </div>
+    <div>
+      <p>Waste to Energy (UK) Ltd was founded in 2014 and is registered in England and Wales. Over more than a decade, the company has worked with buyers, manufacturers and project partners across the UK, Europe, Africa and the Middle East, sourcing equipment and supporting projects in energy, waste and industry.</p>
+      <p>The company is led by its founder and director, who brings over ten years of experience connecting international buyers with suppliers and coordinating cross-border projects. Our approach is simple: understand what the client needs, bring in the right specialists, and deal straightforwardly at every stage.</p>
     </div>
   </div>
 </section>
+
+<section id="contact" class="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="u sec-label">Contact</div>
+      <h2>Tell us what you're working on.</h2>
+      <div class="rule-sm" aria-hidden="true"></div>
+      <p class="lead">Whether you're a buyer with a requirement, a manufacturer seeking a route to market, or a partner with an energy opportunity to assess, we'd be glad to talk. Tell us the requirement, the market and the scale, and we'll come back to you.</p>
+    </div>
+    <div class="cbox">
+      <div class="cfield"><div class="u k">Email</div><div class="v"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#119;&#97;&#115;&#116;&#101;&#116;&#111;&#101;&#110;&#101;&#114;&#103;&#121;&#117;&#107;&#46;&#99;&#111;&#109;">&#105;&#110;&#102;&#111;&#64;&#119;&#97;&#115;&#116;&#101;&#116;&#111;&#101;&#110;&#101;&#114;&#103;&#121;&#117;&#107;&#46;&#99;&#111;&#109;</a></div></div>
+      <div class="cfield"><div class="u k">Telephone</div><div class="v"><a href="tel:+447588500110">+44 7588 500 110</a></div></div>
+      <div class="cfield"><div class="u k">Web</div><div class="v">wastetoenergyuk.com</div></div>
+      <div class="cfield"><div class="u k">Company</div><div class="v">Waste to Energy (UK) Ltd &middot; No. 09021956</div></div>
+      <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;&#119;&#97;&#115;&#116;&#101;&#116;&#111;&#101;&#110;&#101;&#114;&#103;&#121;&#117;&#107;&#46;&#99;&#111;&#109;" class="btn btn-navy">Start a conversation</a>
+    </div>
+  </div>
+</section>
+</main>
 
 <footer>
   <div class="wrap">
@@ -308,7 +340,7 @@
       <div class="fbrand">Waste to Energy <b>(UK)</b> Ltd</div>
       <p class="legal">Registered in England &amp; Wales, No. 09021956. Registered office: Aston House, Redburn Road, Newcastle upon Tyne, NE5 1NB. VAT No. 278457454 &middot; LEI 213800JJKUICYE5MSD82. &copy; 2014&ndash;2026 Waste to Energy (UK) Ltd. All rights reserved.</p>
     </div>
-    <p>Waste to Energy (UK) Ltd sources energy, renewable and industrial equipment for international buyers. Equipment is sourced to meet applicable destination-market regulatory requirements; specific certification is confirmed on a per-order basis.</p>
+    <p>Waste to Energy (UK) Ltd sources energy, renewable and industrial equipment for international buyers and provides energy and commodities advisory services. Equipment is sourced to meet applicable destination-market regulatory requirements; specific certification is confirmed on a per-order basis.</p>
   </div>
 </footer>
 
